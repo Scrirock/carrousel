@@ -10,6 +10,7 @@ html {
 
 body {
     width: 100%;
+    font-size: 5rem;
 }
 
 .slideshow {
@@ -32,9 +33,6 @@ body {
 }
 
 #droite, #gauche{
-    width: 25px;
-    height: 25px;
-    background-color: lawngreen;
     display: inline-block;
     position: relative;
     top: 43vh;
@@ -42,9 +40,9 @@ body {
 }
 
 #droite{
-    left: 57%;
+    left: 54%;
 }
 
 #gauche{
-    left: 40%;
+    left: 38%;
 }
