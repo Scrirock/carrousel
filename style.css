@@ -12,10 +12,39 @@ body {
     width: 100%;
 }
 
-#container{
-    margin: 25rem auto;
+.slideshow {
     width: 250px;
     height: 250px;
-    border: 2px solid black;
-    background-image: url("1.jpg");
+    overflow: hidden;
+    border: 3px solid #F2F2F2;
+    margin: 10% auto;
+}
+
+.slideshow ul {
+    width: 1100%;
+    height: 250px;
+    padding:0; margin:0;
+    list-style: none;
+}
+.slideshow li {
+    float: left;
+    transition-duration: 1s;
+}
+
+#droite, #gauche{
+    width: 25px;
+    height: 25px;
+    background-color: lawngreen;
+    display: inline-block;
+    position: relative;
+    top: 43vh;
+    z-index: 500;
+}
+
+#droite{
+    left: 57%;
+}
+
+#gauche{
+    left: 40%;
 }
