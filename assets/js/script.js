@@ -1,7 +1,7 @@
 let li = document.querySelectorAll("li");
 let i = 1;
 
-function slideAuto(){
+function moveRight(){
     for (let img of li){
         if (i === 10){
             for (let y = 10; y>0; y--) {
@@ -16,8 +16,8 @@ function slideAuto(){
     i++;
 }
 
-document.getElementById("droite").addEventListener("click", slideAuto);
-setInterval(slideAuto, 3000);
+document.getElementById("droite").addEventListener("click", moveRight);
+setInterval(moveRight, 3000);
 
 document.getElementById("gauche").addEventListener("click", ()=>{
     for (let img of li){
