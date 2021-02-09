@@ -6,12 +6,12 @@ function moveRight(){
         if (i === 10){
             for (let y = 10; y>0; y--) {
                 for (let img of li) {
-                    img.style.transform += "translateX(250px)";
+                    img.style.transform += "translateX(450px)";
                 }
             }
             i = 0;
         }
-        img.style.transform += "translateX(-250px)";
+        img.style.transform += "translateX(-450px)";
     }
     i++;
 }
@@ -24,12 +24,12 @@ document.getElementById("gauche").addEventListener("click", ()=>{
         if (i === 1){
             for (let y = 10; y>0; y--) {
                 for (let img of li) {
-                    img.style.transform += "translateX(-250px)";
+                    img.style.transform += "translateX(-450px)";
                 }
             }
             i = 11;
         }
-        img.style.transform += "translateX(250px)";
+        img.style.transform += "translateX(450px)";
     }
     i--;
 });
